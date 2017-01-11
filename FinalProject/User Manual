@@ -1,0 +1,31 @@
+User Manual
+
+To start the program: use the MainController.launch file to start the whole program.
+	1- input a user name and then click on "login"
+	2- create a room 
+	3- invite a player by input his/ her ip address
+	4- click on "send game" to send game to every user in the room
+	5- after the game view pops, click on "start" to start game
+
+To connect to other users:
+	1- INVITE in an existing room, input the user's ip address and invite him
+	2- JOIN input the user's ip address and choose a chatroom from the list to join
+
+Other features: in the game view, input the text message and then click on "send" or enter the "enter" key to send the text message
+
+To end and exit the program
+	1- how to win/lose:
+		1.1- the time is over then the game is over
+		1.2- all the points with score has been selected then the game is over. Player will know the score of its team
+	2- end or exit game: 
+		2.1- close the main frame, then the program will call the stop method of each mini MVC and the whole program is stopped.
+		2.2- close the game frame, then the game model will notify the game server to remove this player and stop the mini mvc
+		2.3- close the lobby frame or click on the "leave" button, then the game lobby will be stopped and removed
+		
+
+The game rule:
+	There will be like 20 points on the map each with an toggle annotation. 4 or 3 of the points have score larger than zero. 
+	When the scored points are all found then the game is over and player will see the score of his/her team.
+	
+	After game starts, players can see if the "scored" point is selected by other players. If scored points are already selected by others, then it can not be selected and will be marked.
+	In the game view, players can talk to teammates.

@@ -1,0 +1,19 @@
+Changes from milestone 1:
+	We used different API from milestone1 and changed the gui of game lobby view.
+	
+Additions:
+	We add multiple message types and corresponding cmds to deal with game issues. All the packages under jz65_kl50.game are added this round.
+	
+
+Structure:
+	We used the similar architecture from HW08 from starting app to construct game. The server uses the chatserver stub in the original chatroom 
+	to send game MVC to every player. This is how the server and client player get connect first. The receive game message would be an unknown 
+	data type for users who runs a different app. And then the server would send the receive game cmd to every user.
+	
+	But in the game period, we used client/server architecture. The chatserver stub of the user who sends the game will be the server of game.
+	The server of game will play the role of all message receiving and forwarding. All the players do not communicate with each other directly.
+	Instead, they send message to server and let server decide which message should be forwarded. So the network performance may affect the speed
+	of message processing.
+	
+	
+	
